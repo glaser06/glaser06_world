@@ -7,6 +7,6 @@ class Article < ActiveRecord::Base
 
   # Scopes
   scope :active, where('active = ?', true)
-  scope :alphabetical, order('caption')
+  scope :alphabetical, order('title')
 
 end

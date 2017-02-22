@@ -2,8 +2,9 @@ KcwWorld::Application.routes.draw do
 
   resources :categories
   resources :proverbs
+  resources :articles
   resources :photos
-    
+
   get 'home' => 'home#index', :as => :home
   root :to => 'home#index'
 
